@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+:root {
+    --bright-color: #FFF;
+    --dark-color: #000;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+a:hover {
+    cursor: pointer;
+}
+.list-item {
+    width: 100%;
+    height: 2rem;
+}
+.list-item {
+    height: 45px;
+    line-height: 45px;
+    text-align: left;
+    margin: 0 3px;
+    padding-left: 10px;
+    border-top: 1px solid #333 ;
+}
+.nav-link {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    color: var(--dark-color);
+    text-decoration: none;
+}
+#main-doc {
+    display: flex;
+    flex-direction: row-reverse;
+}
+#navbar {
+   flex-grow: 1;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.nav-bar__list {
+    height: 91%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 1.6rem;
+}
+.navbar__header {
+    font-size: 2.3rem;
+    text-align: center;
+    margin: 10px 0;
+}
+#main-section {
+    flex-grow: 6;
+    flex-shrink: 10;
+    margin-left: 300px;
+}
+#main-section {
+    padding-left: 35px ;
+}
+.main-section__item-header {
+    font-size: 3rem;
+    margin: 20px 0 10px 0;
+}
+.main-section__item--content {
+    padding-bottom: 13px;
+}
+.main-section__item--content-li {
+    margin-left: 50px;
+    padding-bottom: 15px;
+}
