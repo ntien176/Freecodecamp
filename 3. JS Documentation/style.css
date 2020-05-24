@@ -34,16 +34,15 @@ a:hover {
 .nav-link {
     display: block;
     width: 100%;
-    height: 2rem;
+    height: 100%;
     color: var(--dark-color);
     text-decoration: none;
 }
 #main-doc {
-    display: flex;
-    flex-direction: row-reverse;
+    margin-left: 300px;
+    padding-left: 35px ;
 }
 #navbar {
-   flex-grow: 1;
     width: 300px;
     height: 100vh;
     position: fixed;
@@ -61,14 +60,7 @@ a:hover {
     text-align: center;
     margin: 10px 0;
 }
-#main-section {
-    flex-grow: 6;
-    flex-shrink: 10;
-    margin-left: 300px;
-}
-#main-section {
-    padding-left: 35px ;
-}
+
 .main-section__item-header {
     font-size: 3rem;
     margin: 20px 0 10px 0;
@@ -79,4 +71,29 @@ a:hover {
 .main-section__item--content-li {
     margin-left: 50px;
     padding-bottom: 15px;
+}
+.main-section__item--code {
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: #EEE;
+}
+@media screen and (max-width: 768px) {
+    #navbar {
+        display: block;
+        width: 100%;
+        position: static;
+        height: 200px; 
+    }
+    .nav-bar__list {
+        background-color: #DDD;
+        border: 1px solid #CCC;
+    }
+    #main-doc {
+        display: block;
+        margin:0;
+        padding: 30px 10px;
+        width: 100%;
+    }
 }
